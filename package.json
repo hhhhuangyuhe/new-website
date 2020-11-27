@@ -1,0 +1,27 @@
+{
+  "name": "new-website",
+  "version": "1.0.0",
+  "description": "My perfect Nuxt.js project",
+  "author": "yuhe huang",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "pm2": "pm2 start pm2.config.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/proxy": "^2.0.0",
+    "animate.css": "^4.1.0",
+    "iview": "^3.5.4",
+    "nuxt": "^2.0.0",
+    "qs": "^6.9.4",
+    "swiper": "^5.4.2",
+    "vue-awesome-swiper": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.0"
+  }
+}

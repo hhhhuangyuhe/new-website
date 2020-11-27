@@ -1,0 +1,575 @@
+#aboutUs .main-container{
+    margin: 0 auto;
+}
+.main-container #block1 {
+    margin-bottom: 500px;
+}
+#aboutUs #nav {
+    width: 900px;
+    height: 80px;
+    background: rgba(255,255,255,1);
+    border: 1px solid rgba(226,226,226,1);
+    border-radius: 6px;
+    margin: -40px auto 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 95px;
+    align-items: center;
+}
+#aboutUs #nav span{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0,0,0,1);
+    cursor: pointer;
+    height: 80px;
+    line-height: 80px;
+}
+#aboutUs #nav span.active{
+    border-bottom: 4px solid #FB8C0A;
+    height: 76px;
+}
+#block1 .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 150px auto 100px;
+}
+#block1 .data > div{
+    width: 25%;
+    box-sizing: border-box;
+    height: 100px;
+    border-right: 1px solid rgba(226,226,226,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#block1 .data > div:nth-child(4){
+    border: 0;
+}
+#block1 .data > div > p:nth-child(1){
+    font-size:18px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    font-weight: bold;
+}
+#block1 .data > div > p:nth-child(2){
+    font-size:16px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height: 16px;
+    margin-top: 20px;
+}
+#block1 .data .bigFont{
+    font-size:36px;
+    /* font-family:bebas; */
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    vertical-align: sub;
+    line-height: 33px;
+    display: inline-block;
+    margin-right: 9px;
+}
+/* .description{
+    font-size: 0;
+}
+.description .bgImg{
+    display: inline-block;
+    vertical-align: top;
+    width:800px;
+    height:360px;
+    background: url("..assets/img/aboutus/泛员网网站banner.jpg");
+    background-size: cover;
+    position: relative;
+}
+.description .bgImg .words{
+    width:360px;
+    height:160px;
+    background:rgba(255,255,255,.68);
+    position: absolute;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:18px;
+    bottom: 30px;
+    right: -80px;
+    box-sizing: border-box;
+    padding: 37px 130px 37px 50px;
+    text-indent: 30px;
+}
+.description .rightContainer{
+    display: inline-block;
+    vertical-align: top;
+    height: 360px;
+    background-color: #EFF5FF;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(48,59,75,1);
+    line-height:18px;
+    width: 1120px;
+} */
+#block3 .top{
+    width: 1200px;
+    margin: 100px auto 150px;
+}
+#block3 .top img.map{
+    width:577px;
+    height:496px;
+    vertical-align: top;
+    margin-right: 150px;
+}
+#block3 .top .card{
+    width:420px;
+    height:500px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 20px 0px rgba(225,233,242,1);
+    border-radius:4px;
+    box-sizing: border-box;
+    padding: 61px 70px;
+    display: inline-block;
+}
+.card .t1{
+    font-size:36px;
+    font-family:bebas;
+    font-weight:400;
+    color:rgba(238,238,238,1);
+    line-height:33px;
+    margin-bottom: 79px;
+}
+.card .data{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    margin-bottom: 29px;
+    line-height: 22px;
+}
+.card .bgFont{
+    font-size:24px;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+}
+.card .bdbor{
+    width:40px;
+    height:4px;
+    background:rgba(255,78,58,1);
+    margin-bottom: 40px;
+}
+.card .quu{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height: 24px;
+    margin-bottom: 29px;
+}
+.card .address{
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height: 15px;
+    margin-bottom: 35px;
+}
+.card .contact{
+    font-size:14px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:24px;
+}
+#block3 .bottom{
+    background-color: rgba(248,248,248,1);
+}
+#block3 .bottom .centerBox{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+}
+#block3 .bottom .centerBox .title{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height:24px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+#block2 .box{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#block2 .box > div{
+    text-align: center;
+}
+#block2 .box > div > img{
+    margin-bottom: 50px;
+}
+#block2 .box > div .tt{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height: 25px;
+    margin-bottom: 29px;
+}
+#block2 .box > div .dcContent{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(85,85,85,1);
+    line-height:30px;
+}
+#block2 .box > div .dcContent p{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(85,85,85,1);
+    line-height:30px;
+}
+#block1 .special{
+    height: 460px;
+    width: 100%;
+    background: url(../assets/img/aboutus/矩形106.png);
+    background-size: cover;
+    background-position: center;
+}
+.special .textBox{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.textBox .words {
+    width: 420px;
+    height: 300px;
+    background: rgba(255,255,255,.68);
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0,0,0,1);
+    line-height: 22px;
+    bottom: 30px;
+    left: 70px;
+    box-sizing: border-box;
+    padding: 46px 130px 48px 50px;
+    text-indent: 30px;
+}
+.textBox .rightContainer{
+    display: inline-block;
+    vertical-align: top;
+    /*height: 360px;*/
+    background-color: #EFF5FF;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(48,59,75,1);
+    line-height:22px;
+    width: 511px;
+    position: absolute;
+    right: 70px;
+    box-sizing: border-box;
+    padding: 52px 0 0;
+}
+.textBox .rightContainer > p{
+    text-indent: 28px;
+    /*margin-bottom: 20px;*/
+}
+.mdTitle{
+    font-size:30px;
+    font-weight:400;
+    color:rgba(0,0,0,1);
+    line-height: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.qualification{
+    width: 1200px;
+    margin: 150px auto 240px;
+    font-size: 0;
+}
+.honor{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.qualification .midBox{
+    width: 49%;
+    height: 1254px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.qualification .lineHead{
+    width:40px;
+    height:40px;
+    background: url("../assets/img/aboutus/资质.png");
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    right: -20px;
+}
+.qualification .leftQ{
+    border-right: 1px solid rgba(226,226,226,1);
+}
+.midBox .qq{
+    font-size:20px;
+    font-weight:400;
+    color:rgba(33,33,33,1);
+    line-height: 20px;
+    position: absolute;
+}
+.midBox .qq.ql > span{
+    display: inline-block;
+    font-size:20px;
+    text-align: right;
+    line-height: 22px;
+}
+.midBox .qq.qr > span{
+    display: inline-block;
+    font-size:20px;
+    text-align: left;
+    line-height: 22px;
+}
+.midBox .qq.ql{
+    right: -5px;
+    text-align: center;
+}
+.midBox .qq.qr{
+    left: -5px;
+}
+.midBox .qq.ql::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width:10px;
+    height:10px;
+    background:rgba(251,140,10,1);
+    border-radius:50%;
+    margin-left: 35px;
+}
+.midBox .qq.qTwo.ql::after{
+    position: relative;
+    top: -20px;
+}
+.midBox .qq.qr::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width:10px;
+    height:10px;
+    background:rgba(251,140,10,1);
+    border-radius:50%;
+    margin-right: 35px;
+}
+.midBox .qq.qTwo.qr::before{
+    position: relative;
+    top: -20px;
+}
+.midBox .qq.q1{
+    top: 58px;
+}
+.midBox .qq.q2{
+    top: 138px;
+}
+.midBox .qq.q3{
+    top: 348px;
+}
+.midBox .qq.q4{
+    top: 439px;
+}
+.midBox .qq.q5{
+    top: 632px;
+}
+.midBox .qq.q6{
+    top: 711px;
+}
+.midBox .qq.q7{
+    top: 904px;
+}
+.midBox .qq.q8{
+    top: 1012px;
+}
+.midBox .qq.q9{
+    top: 1237px;
+}
+.midBox .qq.q9 .final{
+    display: inline-block;
+    width:22px;
+    height:22px;
+    border:1px solid rgba(251,140,10,1);
+    border-radius:50%;
+    position: absolute;
+    right: -6px;
+    top: 5px;
+}
+.qualification .leftQ > img{
+    position: absolute;
+    left: 0;
+}
+.qualification .leftQ .p1{
+    top: -55px;
+}
+.qualification .leftQ .p3{
+    top: 304px;
+}
+.qualification .leftQ .p5{
+    top: 587px;
+}
+.qualification .leftQ .p7{
+    top: 871px;
+}
+.qualification .leftQ .p9{
+    top: 1158px;
+}
+.qualification .rightQ > img{
+    position: absolute;
+    right: 0;
+}
+.qualification .rightQ .p2{
+    top: -55px;
+}
+.qualification .rightQ .p4{
+    top: 304px;
+}
+.qualification .rightQ .p6{
+    top: 587px;
+}
+.qualification .rightQ .p8{
+    top: 871px;
+}
+.honor .vert{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -36px;
+    z-index: 2;
+}
+.honor .rightB .vert{
+    left: -36px;
+}
+.honor .vert.v2017{
+    top: 800px;
+}
+.honor .vert.v2018{
+    top: 180px;
+}
+.honor .vert.v2016{
+    top: 1365px;
+}
+.honor .vert.v2015{
+    top: 1760px;
+}
+.honor .leftB{
+    border-right: 1px solid rgba(208,208,208,1);
+    height: 1762px;
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+.honor .rightB{
+    width: 49%;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.honor .chain{
+    width:16px;
+    height:1px;
+    background:rgba(208,208,208,1);
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+}
+.honor .ball{
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    width:10px;
+    height:10px;
+    background:rgba(242,242,242,1);
+    border:1px solid rgba(208,208,208,1);
+    border-radius:50%;
+}
+.honor .yearCard{
+    width:72px;
+    height:32px;
+    background:rgba(242,242,242,1);
+    border:1px solid rgba(208,208,208,1);
+    border-radius:16px;
+    display: inline-block;
+    font-size:18px;
+    font-weight:400;
+    color:rgba(92,154,255,1);
+    text-align: center;
+    line-height: 32px;
+}
+.box2019{
+    width:540px;
+    height:692px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(208,208,208,1);
+    position: absolute;
+    top: -80px;
+    right: 59px;
+}
+.box2018{
+    width:540px;
+    height:1083px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(208,208,208,1);
+    position: absolute;
+    top: 130px;
+    left: 59px;
+}
+.box2017{
+    width:540px;
+    height:1352px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(208,208,208,1);
+    position: absolute;
+    top: 740px;
+    right: 59px;
+}
+.box2016{
+    width:540px;
+    height:297px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(208,208,208,1);
+    position: absolute;
+    top: 1313px;
+    left: 59px;
+}
+.box2015{
+    width:540px;
+    height:445px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(208,208,208,1);
+    position: absolute;
+    top: 1710px;
+    left: 59px;
+    margin-bottom: 100px;
+}
+.honor .bbox{
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+.honor .bw{
+    font-size:20px;
+    font-weight:400;
+    color:rgba(33,33,33,1);
+    line-height: 20px;
+    margin: 20px 0 16px;
+}
+.honor .sw{
+    font-size:16px;
+    font-weight:400;
+    color:rgba(136,136,136,1);
+}
+.honor .sw.nf{
+    margin-bottom: 45px;
+}
