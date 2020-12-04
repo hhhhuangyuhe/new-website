@@ -11,17 +11,22 @@
               <nuxt-link
                 class="title"
                 :to="'/information/inner?id=' + latest_ma._id + '&cateId=10000'"
-              >{{latest_ma._title}}</nuxt-link>
-              <p class="summary">{{latest_ma._summary}}</p>
-              <p class="time">{{formatTo(latest_ma._addtime)}}</p>
-              <p class="address">{{latest_ma._address}}</p>
+                >{{ latest_ma._title }}</nuxt-link
+              >
+              <p class="summary">{{ latest_ma._summary }}</p>
+              <p class="time">{{ formatTo(latest_ma._addtime) }}</p>
+              <p class="address">{{ latest_ma._address }}</p>
               <nuxt-link class="signUp" to="/fillinginfo">立即报名</nuxt-link>
             </div>
           </div>
           <div class="old-MA">
             <p class="block-title">
               往期活动
-              <nuxt-link class="more-MA" :to="'/information/list?pageIndex=1&pageSize=10&cateId=10000'">全部</nuxt-link>
+              <nuxt-link
+                class="more-MA"
+                :to="'/information/list?pageIndex=1&pageSize=10&cateId=10000'"
+                >全部</nuxt-link
+              >
             </p>
             <div class="old-MA-list">
               <div class="old-MA-item" v-for="item in old_ma" :key="item._id">
@@ -29,9 +34,15 @@
                 <div class="details">
                   <nuxt-link
                     class="title"
-                    :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-                  >{{item._title}}</nuxt-link>
-                  <p class="summary">{{item._summary}}</p>
+                    :to="
+                      '/information/inner?id=' +
+                      item._id +
+                      '&cateId=' +
+                      item._categoryid
+                    "
+                    >{{ item._title }}</nuxt-link
+                  >
+                  <p class="summary">{{ item._summary }}</p>
                 </div>
               </div>
             </div>
@@ -40,18 +51,35 @@
         <div class="fy-moving">
           <p class="block-title">
             泛员动态
-            <nuxt-link class="more-MA" :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + fy_dynamic_categoryid">全部</nuxt-link>
+            <nuxt-link
+              class="more-MA"
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                fy_dynamic_categoryid
+              "
+              >全部</nuxt-link
+            >
           </p>
           <div class="dynamic-list">
-            <div class="dynamic-item" v-for="item in fy_dynamic" :key="item._id">
+            <div
+              class="dynamic-item"
+              v-for="item in fy_dynamic"
+              :key="item._id"
+            >
               <img :src="item._newImgurl" class="dynamic-img" />
               <div class="dynamic-content">
                 <a
                   class="title"
-                  :href="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-                >{{item._title}}</a>
-                <p class="summary">{{item._summary}}</p>
-                <p class="time">{{formatTo(item._addtime)}}</p>
+                  :href="
+                    '/information/inner?id=' +
+                    item._id +
+                    '&cateId=' +
+                    item._categoryid
+                  "
+                  >{{ item._title }}</a
+                >
+                <p class="summary">{{ item._summary }}</p>
+                <p class="time">{{ formatTo(item._addtime) }}</p>
               </div>
             </div>
           </div>
@@ -61,171 +89,271 @@
         <ul class="info-type">
           <li
             v-for="item in newList"
-            :class="{'active':activeNew == item.type}"
+            :class="{ active: activeNew == item.type }"
             @click="activeNew = item.type"
           >
             <img :src="activeNew == item.type ? item.activeImg : item.img" />
-            <p class="type" :class="{'activeType':activeNew == item.type}">{{item.type}}</p>
+            <p class="type" :class="{ activeType: activeNew == item.type }">
+              {{ item.type }}
+            </p>
           </li>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '最新资讯'">
-          <li v-for="(item,index) in allData.mn" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.mn"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.mn!=null && allData.mn!='null'">
+          <p v-if="allData.mn != null && allData.mn != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.mn[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.mn[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '劳动关系'">
-          <li v-for="(item,index) in allData.ldgx" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.ldgx"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.ldgx!=null && allData.ldgx!='null'">
+          <p v-if="allData.ldgx != null && allData.ldgx != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.ldgx[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.ldgx[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '社保公积金'">
-          <li v-for="(item,index) in allData.sbgjj" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.sbgjj"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.sbgjj!=null && allData.sbgjj!='null'">
+          <p v-if="allData.sbgjj != null && allData.sbgjj != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.sbgjj[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.sbgjj[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '薪酬管理'">
-          <li v-for="(item,index) in allData.xcgl" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.xcgl"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.xcgl!=null && allData.xcgl!='null'">
+          <p v-if="allData.xcgl != null && allData.xcgl != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.xcgl[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.xcgl[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '员工福利'">
-          <li v-for="(item,index) in allData.ygfl" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.ygfl"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.ygfl!=null && allData.ygfl!='null'">
+          <p v-if="allData.ygfl != null && allData.ygfl != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.ygfl[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.ygfl[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == '认可激励'">
-          <li v-for="(item,index) in allData.rkjl" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.rkjl"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.rkjl!=null && allData.rkjl!='null'">
+          <p v-if="allData.rkjl != null && allData.rkjl != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.rkjl[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.rkjl[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
         <ul class="newsContentList" v-if="activeNew == 'HR信息化'">
-          <li v-for="(item,index) in allData.hrxxh" class="newsContentItem" v-if="index < 6">
+          <li
+            v-for="(item, index) in allData.hrxxh"
+            class="newsContentItem"
+            v-if="index < 6"
+          >
             <div class="date">
-              <span class="day">{{getDate_Day(item._addtime)}}</span>
-              /{{getDate_Month(item._addtime)}}月
+              <span class="day">{{ getDate_Day(item._addtime) }}</span>
+              /{{ getDate_Month(item._addtime) }}月
             </div>
             <div class="content">
               <nuxt-link
                 class="title"
-                :to="'/information/inner?id=' + item._id + '&cateId=' + item._categoryid"
-              >{{item._title}}</nuxt-link>
-              <p class="desc">{{item._summary}}</p>
+                :to="
+                  '/information/inner?id=' +
+                  item._id +
+                  '&cateId=' +
+                  item._categoryid
+                "
+                >{{ item._title }}</nuxt-link
+              >
+              <p class="desc">{{ item._summary }}</p>
             </div>
           </li>
-          <p v-if="allData.hrxxh!=null && allData.hrxxh!='null'">
+          <p v-if="allData.hrxxh != null && allData.hrxxh != 'null'">
             <span class="bf-line"></span>
             <nuxt-link
               class="more-btn"
-              :to="'/information/list?pageIndex=1&pageSize=10&cateId=' + allData.hrxxh[0]._categoryid"
-            >全部</nuxt-link>
+              :to="
+                '/information/list?pageIndex=1&pageSize=10&cateId=' +
+                allData.hrxxh[0]._categoryid
+              "
+              >全部</nuxt-link
+            >
             <span class="bf-line"></span>
           </p>
         </ul>
@@ -238,22 +366,24 @@
 export default {
   layout: "fyw",
   head() {
-        return {
-        title: '泛员网活动-泛员网动态-泛员小报-泛员网',
-        meta: [
-            {
-            hid: 'keywords',
-            name: 'keywords',
-            content: '泛员网官方活动，泛员网最新动态，人力资源管理，劳动政策法规，社保公积金，企业数字化转型，泛员小报'
-            },
-            {
-            hid: 'description',
-            name: 'description',
-            content: '泛员网活动与资讯栏目，实时发布最新的泛员网官方活动消息，分享泛员网品牌活动，分享最新的人力资源行业最新资讯，人力资源管理知识干货、泛员小报等，涵盖劳动关系，个税社保、薪酬管理，员工福利、认可激励、HR数字化等'
-            },
-        ]
-        }
-    },
+    return {
+      title: "泛员网活动-泛员网动态-泛员小报-泛员网",
+      meta: [
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "泛员网官方活动，泛员网最新动态，人力资源管理，劳动政策法规，社保公积金，企业数字化转型，泛员小报",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "泛员网活动与资讯栏目，实时发布最新的泛员网官方活动消息，分享泛员网品牌活动，分享最新的人力资源行业最新资讯，人力资源管理知识干货、泛员小报等，涵盖劳动关系，个税社保、薪酬管理，员工福利、认可激励、HR数字化等",
+        },
+      ],
+    };
+  },
   async asyncData({ app, query }) {
     let { data } = await app.$axios.get(`/api/NewActive/IndexData`);
     return {
