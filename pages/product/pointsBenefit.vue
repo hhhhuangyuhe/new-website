@@ -9,19 +9,19 @@
       <ul>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1219@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11@2x.png" />
           </div>
           <p>众口难调，无法满足<span class="highlightText">个性化需求</span> ，员工满意度低</p>
         </li>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1217@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11_5@2x.png" />
           </div>
           <p>员工的福利<span class="highlightText">参与率</span>不高，福利<span class="highlightText">感知度</span>低</p>
         </li>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1218@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11_1@2x.png" />
           </div>
           <p>花费大量时间选品、采购、寄送，专人负责福利管理，<span class="highlightText">耗时耗力</span></p>
         </li>
@@ -29,19 +29,19 @@
       <ul>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1220@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11_2@2x.png" />
           </div>
           <p>企业福利补贴发放较频繁，无法降低<span class="highlightText">企业税负</span>和员工<span class="highlightText">个人所得税</span></p>
         </li>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1221@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11_3@2x.png" />
           </div>
           <p>福利系统<span class="highlightText">功能有限</span>，操作和维护复杂</p>
         </li>
         <li>
           <div class="warpImg">
-            <img src="../../assets/img/product/积分福利/publicity/组 1222@2x.png" />
+            <img src="../../assets/img/product/积分福利/publicity/蒙版组 11_4@2x.png" />
           </div>
           <p><span class="highlightText">组织文化建设</span>，缺乏合适的落实方式</p>
         </li>
@@ -156,36 +156,36 @@
       <ul>
         <li>
           <div class="imgWarp">
-            <img src="../../assets/img/product/积分福利/publicity/蒙版组 5@2x.png" alt="">
+            <img src="../../assets/img/product/积分福利/publicity/摄图网_400957503_banner_中国芯片崛起（企业商用）@2x.png" alt="">
           </div>
           <div class="title">
-            <div class="ico">餐饮</div>
+            <div class="ico">通信</div>
             <h4>某科技通信有限公司</h4>
           </div>
           <div class="content">
             <h3>企业弹性福利实施案例</h3>
             <div class="label">
-              <span>餐饮/住宿</span>
-              <span>年度体检</span>
+              <span class="orangeLabel">通信/电子</span>
+              <span class="blueLabel">积分福利</span>
             </div>
-            <p>通过泛员网体检平台，该公司分布在北京、上海、深圳等城市的500余名员工实现了员工体检全国统一管理，体检费用全国统一价格，员工自主选择城市和体检机构，HR随时查看员工体检进度，做到让企业放心、HR省心、员工舒心。</p>
+            <p>该公司通过泛员积分将福利扩展到年度体检、节日福利、员工补贴等各类应用场景，员工福利感知明显提升，由于员工补贴以积分形式发放不纳入工资总额扣税，一年即可为该公司减少成本900余万元，合规实现企业与员工双节税。</p>
           </div>
         </li>
         <li>
           <div class="imgWarp">
-            <img src="../../assets/img/product/积分福利/publicity/蒙版组 6@2x.png" alt="">
+            <img src="../../assets/img/product/积分福利/publicity/pexels-chokniti-khongchum-2280549@2x.png" alt="">
           </div>
           <div class="title">
-            <div class="ico">建筑</div>
-            <h4>某地产集团有限公司</h4>
+            <div class="ico">生物</div>
+            <h4>某生物科技股份有限公司</h4>
           </div>
           <div class="content">
-            <h3>员工年度体检实施案例</h3>
+            <h3>员工积分福利管理案例</h3>
             <div class="label">
-              <span>建筑/房地产</span>
-              <span>年度体检</span>
+              <span class="orangeLabel">生物/制药/医疗</span>
+              <span class="blueLabel">积分福利</span>
             </div>
-            <p>采用泛员网实施方案后，该公司员工通过手机端即可自主预约体检时间和门店并自动推送体检报告，HR无需对接体检机构，同时泛员网客服中心及时跟进和处理员工任何问题，保证员工有更好的服务体验。</p>
+            <p>在泛员网积分福利平台，员工有足够丰富的消费场景，HR线上完成福利管理和实施，无需对接商家，省去大量的繁琐性工作，同时公司发放积分，员工使用积分兑换合适的福利商品或服务，员工参与感更强，福利感知更强烈。</p>
           </div>
         </li><li>
           <div class="imgWarp">
@@ -193,15 +193,15 @@
           </div>
           <div class="title">
             <div class="ico" style="font-size:16px;">互联网</div>
-            <h4>某信息技术股份有限公司</h4>
+            <h4>某信息科技有限公司</h4>
           </div>
           <div class="content">
-            <h3>员工体检全线上管理案例</h3>
+            <h3>积分福利数字化管理案例</h3>
             <div class="label">
-              <span>计算机/互联网</span>
-              <span>年度体检</span>
+              <span class="orangeLabel">计算机/互联网</span>
+              <span class="blueLabel">年度体检</span>
             </div>
-            <p>HR全流程线上操作，员工手机端自选体检机构并推送电子报告，同时员工体检流程和重要节点均有自动提醒，系统和人工多渠道通知，HR能随时了解和掌握每一位员工的体检进度，实现了该公司高效管理员工体检。</p>
+            <p>积分福利涵盖电商购物、餐饮美食、交通出行、休闲娱乐、轻松生活、学习教育等6大板块，满足员工不同需求，同时员工的福利发放、反馈和管理流程均线上完成，操作简单，维护方便，福利实施周期从2周缩减到1天。</p>
           </div>
         </li>
       </ul>
@@ -249,7 +249,10 @@
         <p class="change">选择泛员网 拥抱数字化</p>
         <h2>持续提升人力资源运营效能</h2>
         <p class="desc">一个平台，处理大中型企业更多HR管理与服务需求…</p>
-        <div class="btnWhite" @click="$router.push('/fillinginfo')">预约体验</div>
+        <div class="warpBtn">
+          <div class="btnWhite" @click="$router.push('/fillinginfo')">预约体验</div>
+          <div class="btnLine" @click="MoNiClick">预约体验</div>
+        </div>
       </div>
     </div>
 
@@ -282,7 +285,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    MoNiClick(){
+      document.getElementById('kf5-support-btn').click()
+    },
+  },
 };
 </script>
 
@@ -316,6 +323,10 @@ export default {
 .info li{
   width: 418px!important;
 }
+.footer .warpBtn{
+  display: flex;
+  margin-top: 70px;
+}
 .footer .btnWhite{
   width: 180px;
   text-align: center;
@@ -323,12 +334,27 @@ export default {
   height: 50px;
   color: #4C80FA;
   font-size: 20px;
-  margin-top: 70px;
   background: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 10px 20px 0px rgba(12,53,149,0.4); 
   user-select: none;
   cursor: pointer;
+  margin-right: 30px;
+}
+.footer .btnLine{
+  user-select: none;
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  line-height: 46px;
+  border: 2px solid #ffffff;
+  font-size: 20px;
+  font-family: Source Han Sans SC, Source Han Sans SC-Regular;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 25px;
+
 }
 .iconList {
   width: 532px;
@@ -390,33 +416,36 @@ export default {
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16); 
   text-align: center;
   line-height: 61px;
-  font-size: 20px;
+  font-size: 16px;
   position: relative;
   top: -36px;
   margin-right: 10px;
+  color: #747784;
 }
 .casus .title{
   display: flex;
   padding-left: 18px;
   margin-top: 5px;
-  margin-bottom: -25px;
+  margin-bottom: -12px;
 }
 .casus .title h4{
-  color: #222531;
+  color: #38424f;
+  margin-left: 10px;
 }
 .casus .content{
-  padding:0 16px 16px; 
+  padding:0 25px 16px; 
 }
 .casus .content h3{
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .casus .content p{
   text-align: justify;
-  padding-top: 20px;
-  color: #222531;
+  padding-top: 26px;
+  color: #747784;
+  font-size: 16px;
 }
-.casus .label span{
+/* .casus .label span{
   display: inline-block;
   background: #fff;
   text-align: center;
@@ -428,7 +457,31 @@ export default {
   margin-right: 10px;
   border-radius: 12px;
   box-shadow: 2px 2px 4px 0px rgba(12,53,149,0.1); 
+} */
+.orangeLabel{
+  height: 28px;
+  padding: 0 10px;
+  line-height: 28px;
+  background: #fff6eb;
+  border: 1px solid #ff8a00;
+  border-radius: 4px;
+  display:inline-block;
+  text-align: center;
+  color: #ff8a00;
+  margin-right: 10px;
 }
+.blueLabel{
+  color: #4C80FA;
+  height: 28px;
+  padding: 0 10px;
+  line-height: 28px;
+  background: #f5f9ff;
+  border: 1px solid #4c80fa;
+  border-radius: 4px;
+  display:inline-block;
+  text-align: center;
+}
+
 .highlightText{
   color: #FF7300;
   font-size: 16px;

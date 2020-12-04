@@ -20,7 +20,7 @@
             </div>
             <div>
               <img
-                src="../assets/img/right/APP下载.png"
+                src="../assets/img/index/appdownload.png"
                 class="qrCodeIcon qrCode-2"
               />
               <p>员工服务APP</p>

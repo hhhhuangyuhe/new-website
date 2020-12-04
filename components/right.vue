@@ -17,10 +17,13 @@
       <li @mouseenter="showQrCodes = true" @mouseleave="showQrCodes = false">
         <img src="../assets/img/index/app 下载.png" />
         <span>员工移动</span>
-        <span style="margin-top:4px">服务平台</span>
+        <span style="margin-top: 4px">服务平台</span>
         <div class="qrCodes" v-show="showQrCodes">
           <div class="codeBox">
-            <img src="../assets/img/right/APP下载.png"/>
+            <img
+              src="../assets/img/index/appdownload.png"
+              style="width: 110px; height: 110px"
+            />
             <p>下载APP登陆</p>
           </div>
           <!-- <div class="codeBox">
@@ -44,12 +47,12 @@ export default {
     };
   },
   methods: {
-    MoNiClick(){
-      document.getElementById('kf5-support-btn').click()
+    MoNiClick() {
+      document.getElementById("kf5-support-btn").click();
     },
-    toTop(){
+    toTop() {
       document.body.scrollTop = document.documentElement.scrollTop = 0;
-    }
+    },
   },
   mounted() {},
 };
@@ -66,7 +69,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 80px;
-  background: rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, 0.6);
   border: 1px solid #e2e2e2;
   /* opacity: 0.6; */
   border-radius: 4px;
@@ -86,62 +89,62 @@ export default {
   line-height: 14px;
   margin-top: 9px;
 }
-.phone{
+.phone {
   position: absolute;
-    top: 16px;
-    display: block;
-    width: 165px;
-    height: 50px;
-    background: rgba(0,0,0,.6);
-    border-radius: 4px;
-    left: -180px;
-    font-size: 18px;
-    text-align: center;
-    line-height: 50px;
+  top: 16px;
+  display: block;
+  width: 165px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  left: -180px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
 }
 .phone::after {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 7px solid transparent;
-    border-left: 6px solid rgba(0,0,0,.6);
-    border-bottom: 7px solid transparent;
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 6px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 7px solid transparent;
 }
-.qrCodes{
-position: absolute;
-    top: 0;
-    left: -200px;
-    width: 185px;
-    height: 200px;
-    background: rgba(0,0,0,.6);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 0 36px;
+.qrCodes {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 185px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 36px;
 }
 .qrCodes .codeBox {
-    text-align: center;
+  text-align: center;
 }
 .qrCodes .codeBox img {
-    margin-bottom: 9px;
-    vertical-align: bottom;
+  margin-bottom: 9px;
+  vertical-align: bottom;
 }
 .qrCodes::after {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 33%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 7px solid transparent;
-    border-left: 6px solid rgba(0,0,0,.6);
-    border-bottom: 7px solid transparent;
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 33%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 6px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 7px solid transparent;
 }
 </style>
