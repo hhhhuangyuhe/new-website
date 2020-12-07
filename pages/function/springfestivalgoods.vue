@@ -1,8 +1,14 @@
 <template>
   <div id="springfestivalgoods">
     <div class="top">
+      <div class="btns">
+        <div class="getPlanBtn btn1" @click="MoNiClick">立即咨询</div>
+        <div class="getPlanBtn btn2" @click="goFillingInfo">预约体验</div>
+      </div>
+    </div>
+    <div class="goodsContainer">
       <div class="groups">
-        <p class="title">春节福利套餐</p>
+        <!-- <p class="title">春节福利套餐</p> -->
         <div class="setsGrade">
           <div
             class="setsTag"
@@ -55,8 +61,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="goodsContainer">
       <div class="goodsList" v-show="activeSet == 0">
         <div class="goodsItem" v-for="(item, index) in price100" :key="index">
           <div class="goodsImgBox">
@@ -163,12 +167,96 @@
         </div>
       </div>
     </div>
+    <div class="goodsLastBlock">
+      <img src="@/assets/img/function/春节/矩形 715.png" class="bottomImg" />
+      <div class="bottomBox">
+        <div class="productList">
+          <div class="product">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象.png"
+              class="pdIcon"
+            />
+            <p class="pdName">HCM SaaS</p>
+          </div>
+          <nuxt-link class="product" to="/product/nsso">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_1.png"
+              class="pdIcon"
+            />
+            <p class="pdName">全国社保外包</p>
+          </nuxt-link>
+          <nuxt-link class="product" to="/product/payroll">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_2.png"
+              class="pdIcon"
+            />
+            <p class="pdName">薪酬服务外包</p>
+          </nuxt-link>
+          <nuxt-link class="product" to="/product/pointsBenefit">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_3.png"
+              class="pdIcon"
+            />
+            <p class="pdName">积分福利</p>
+          </nuxt-link>
+          <nuxt-link class="product" to="/product/holidayBenefits">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_4.png"
+              class="pdIcon"
+            />
+            <p class="pdName">节日福利</p>
+          </nuxt-link>
+          <nuxt-link class="product" to="/product/employeeProtection">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_5.png"
+              class="pdIcon"
+            />
+            <p class="pdName">补充医疗保险</p>
+          </nuxt-link>
+          <nuxt-link class="product" to="/product/staffMedicalExamination">
+            <img
+              src="@/assets/img/function/春节/矢量智能对象_6.png"
+              class="pdIcon"
+            />
+            <p class="pdName">年度体检</p>
+          </nuxt-link>
+        </div>
+        <div class="right">
+          <p class="title">选择泛员网 拥抱数字化</p>
+          <p class="subtitle">持续提升人力资源运营效能</p>
+          <p class="desc">一个平台，处理大中型企业更多HR管理与服务需求…</p>
+          <div class="btns">
+            <div class="getPlanBtn btn1" @click="MoNiClick">立即咨询</div>
+            <div class="getPlanBtn btn2" @click="goFillingInfo">预约体验</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   layout: "fyw",
+  head() {
+    return {
+      title: "春节员工福利-企业弹性福利-公司节日福利-泛员网",
+      meta: [
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "春节福利，员工福利，企业福利，公司福利，年节福利，节日福利，过年福利",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "泛员网企业春节福利方案，整合各大电商资源，礼品涵盖食品生鲜、家电数码、居家生活、个护美妆等品类，为企业提供100-800元共七档不同价格的福利套餐，每档套餐提供20-40款礼品，员工N选1自主兑换，礼品寄送到家。",
+        },
+      ],
+    };
+  },
   components: {},
   data() {
     return {
@@ -1852,24 +1940,36 @@ export default {
       ],
     };
   },
-  methods: {},
+  methods: {
+    MoNiClick() {
+      document.getElementById("kf5-support-btn").click();
+    },
+    goFillingInfo() {
+      this.$router.push("/fillinginfo");
+    },
+  },
 };
 </script>
 
 <style scoped>
+#springfestivalgoods {
+  background-image: url("../../assets/img/function/春节/矩形725_2.png");
+  background-repeat: repeat;
+}
 #springfestivalgoods .top {
   width: 100%;
-  height: 310px;
-  background-image: url("../../assets/img/function/春节/矩形 9.png");
+  height: 725px;
+  background-image: url("../../assets/img/function/春节/组 1326.png");
   background-size: cover;
   background-position: center;
   position: relative;
+  /* z-index: 5; */
 }
-.top .groups {
+.groups {
   width: 1100px;
   margin: 0 auto;
 }
-.top .groups .title {
+.groups .title {
   font-size: 48px;
   font-family: YuYang;
   text-align: center;
@@ -1877,7 +1977,7 @@ export default {
   line-height: 46px;
   padding: 62px 0 45px;
 }
-.top .groups .setsGrade {
+.groups .setsGrade {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1950,8 +2050,10 @@ export default {
   right: 35px;
 }
 .goodsContainer {
-  background-image: url("../../assets/img/function/春节/矩形 725.png");
+  background-image: url("../../assets/img/function/春节/矩形725_2.png");
   background-repeat: repeat;
+  position: relative;
+  top: -50px;
 }
 .goodsList {
   width: 1200px;
@@ -1990,7 +2092,7 @@ export default {
   font-family: PingFang;
   font-weight: 700;
   text-align: left;
-  color: #ffffff;
+  color: #3a1010;
   line-height: 20px;
   margin-bottom: 16px;
 }
@@ -1999,7 +2101,7 @@ export default {
   font-family: PingFang;
   font-weight: 400;
   text-align: left;
-  color: #ffffff;
+  color: #3a1010;
   line-height: 24px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2007,13 +2109,210 @@ export default {
   overflow: hidden;
   cursor: pointer;
 }
+.goodsLastBlock .planBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 253px;
+  height: 64px;
+  line-height: 64px;
+  background-image: url("../../assets/img/function/春节/形状 23 拷贝.png");
+  background-size: cover;
+  font-size: 24px;
+  color: #dd4659;
+  text-align: center;
+  position: absolute;
+  top: 645px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  cursor: pointer;
+  user-select: none;
+}
+.goodsLastBlock .planBtn .icon {
+  width: 12px;
+  height: 13px;
+  display: block;
+  background-image: url("../../assets/img/function/春节/矩形 11 拷贝 3.png");
+  background-size: cover;
+  margin: 0 14px;
+}
+.goodsLastBlock {
+  margin-top: -240px;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+}
+.goodsLastBlock .title {
+  font-size: 48px;
+  font-family: YuYang;
+  text-align: center;
+  color: #dd4659;
+  line-height: 46px;
+  margin: 0 0 50px;
+}
+.goodsLastBlock .serviceLine {
+  width: 100%;
+  margin-bottom: 91px;
+  vertical-align: bottom;
+}
+.goodsLastBlock .bottomImg {
+  /* width: 100%; */
+  vertical-align: bottom;
+  height: 680px;
+  margin: 0 -100%;
+}
+.bottomBox .right .title {
+  font-size: 30px;
+  line-height: 29px;
+  font-family: YuYang;
+  text-align: left;
+  color: #fcdca9;
+  margin-bottom: 26px;
+}
+.bottomBox .right .subtitle {
+  font-size: 44px;
+  font-family: YuYang;
+  text-align: left;
+  color: #ffffff;
+  line-height: 42px;
+  margin-bottom: 38px;
+}
+.bottomBox .right .desc {
+  font-size: 22px;
+  font-family: YuYang;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.bottomBox .right .btns {
+  display: flex;
+}
+.bottomBox .right .btns .getPlanBtn.btn1,
+.top .btns .getPlanBtn.btn1 {
+  background-image: url("../../assets/img/function/春节/形状 23.png");
+  color: #dd4659;
+}
+.bottomBox .right .btns .getPlanBtn.btn1::before,
+.bottomBox .right .btns .getPlanBtn.btn1::after,
+.top .btns .getPlanBtn.btn1::before,
+.top .btns .getPlanBtn.btn1::after {
+  background-image: url("../../assets/img/function/春节/矩形 11.png");
+}
+.bottomBox .right .btns .getPlanBtn.btn2.top .btns .getPlanBtn.btn2 {
+  background-image: url("../../assets/img/function/春节/形状 23_1.png");
+  color: #fcdca9;
+}
+.bottomBox .right .btns .getPlanBtn.btn2::before,
+.bottomBox .right .btns .getPlanBtn.btn2::after,
+.top .btns .getPlanBtn.btn2::before,
+.top .btns .getPlanBtn.btn2::after {
+  background-image: url("../../assets/img/function/春节/矩形 11_1.png");
+  height: 13px;
+}
+.productList {
+  width: 610px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.productList .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 66px;
+  margin-bottom: 50px;
+}
+.productList .product .pdIcon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.productList .product .pdIcon:hover {
+  top: -4px;
+}
+.productList .product .pdName {
+  font-size: 16px;
+  font-family: PingFang;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 16px;
+}
+.bottomBox {
+  width: 1168px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.getPlanBtn {
+  width: 300px;
+  height: 109px;
+  background-image: url("../../assets/img/function/春节/形状 23_2.png");
+  background-size: cover;
+  font-size: 24px;
+  font-family: YuYang;
+  text-align: left;
+  color: #fcdca9;
+  text-align: center;
+  line-height: 74px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin: 18px 0 0 -20px;
+  transition: all 0.2s ease-in-out;
+}
+.getPlanBtn:hover {
+  opacity: 0.85;
+  top: -2px;
+}
+.getPlanBtn::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../../assets/img/function/春节/矩形 11 拷贝 5.png");
+  background-size: cover;
+  position: absolute;
+  top: 38px;
+  transform: translateY(-50%);
+  left: 52px;
+}
+.getPlanBtn::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("../../assets/img/function/春节/矩形 11 拷贝 5.png");
+  background-size: cover;
+  position: absolute;
+  top: 38px;
+  transform: translateY(-50%);
+  right: 52px;
+}
+.top .btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 190px;
+}
+.top .btns .getPlanBtn {
+  margin-left: 0px;
+}
 
 @media screen and (max-width: 1600px) {
-  #springfestivalgoods .top {
+  /* #springfestivalgoods .top {
     height: 258.33px;
   }
   .top .groups {
     width: 1000px;
-  }
+  } */
 }
 </style>

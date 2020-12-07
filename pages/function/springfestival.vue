@@ -498,6 +498,25 @@
 import qs from "qs";
 export default {
   layout: "fyw",
+  head() {
+    return {
+      title: "春节员工福利-企业弹性福利-公司节日福利-泛员网",
+      meta: [
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "春节福利，员工福利，企业福利，公司福利，年节福利，节日福利，过年福利",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "泛员网企业春节福利方案，整合各大电商资源，礼品涵盖食品生鲜、家电数码、居家生活、个护美妆等品类，为企业提供100-800元共七档不同价格的福利套餐，每档套餐提供20-40款礼品，员工N选1自主兑换，礼品寄送到家。",
+        },
+      ],
+    };
+  },
   components: {},
   data() {
     return {};
