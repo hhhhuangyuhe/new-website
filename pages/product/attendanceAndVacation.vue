@@ -31,8 +31,7 @@
           <p class="p1">支持多种考勤方式，灵活排班</p>
           <p class="p3">
             支持手机移动定位考勤，支持主流硬件设备考勤
-            智能考勤排班，支持批量快速可视化排班
-            灵活定义员工出勤规则、打卡地点
+            智能考勤排班，支持批量快速可视化排班 灵活定义员工出勤规则、打卡地点
           </p>
         </div>
         <img src="../../assets/img/product/pd5/产品图1.png" />
@@ -116,14 +115,18 @@
           <img src="../../assets/img/product/pd1/HR1.png" />
           <div class="rt">
             <p class="p1">企业HR</p>
-            <p class="p2">员工的请休假、外勤登记和考勤异常等流程都在线审批及完成，公司也不用额外购买添加考勤管理系统了。</p>
+            <p class="p2">
+              员工的请休假、外勤登记和考勤异常等流程都在线审批及完成，公司也不用额外购买添加考勤管理系统了。
+            </p>
           </div>
         </div>
         <div class="card card2">
           <img src="../../assets/img/product/pd1/HR2.png" />
           <div class="rt">
             <p class="p1">企业员工</p>
-            <p class="p2">自己就可以查询考勤与休假记录，流程申请与审批状态，再也不用去问HR了。</p>
+            <p class="p2">
+              自己就可以查询考勤与休假记录，流程申请与审批状态，再也不用去问HR了。
+            </p>
           </div>
         </div>
         <div class="card card3">
@@ -148,6 +151,24 @@
 <script>
 export default {
   layout: "fyw",
+  head() {
+    return {
+      title: "考勤与休假-劳动管理-工时管理-泛员网",
+      meta: [
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "考勤管理、线上打卡、工时管理、假勤管理、考勤系统",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "泛员网考勤与休假解决方案，支持灵活定义员工出勤及休假规则，匹配多样化的工时管理应用场景，考勤管理全线上化处理，自动关联员工假期额度；打卡支持WiFi、GPS，补签、加班、休假、调班均可在线查看申请，考勤异常系统自动提醒；实时收集、分析、生成假勤数据报表，智能穿透问题数据，快速完成考勤休假数据核对，提升HR管理效率。",
+        },
+      ],
+    };
+  },
   components: {},
   data() {
     return {};

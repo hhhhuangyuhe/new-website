@@ -2050,10 +2050,10 @@ export default {
   right: 35px;
 }
 .goodsContainer {
-  background-image: url("../../assets/img/function/春节/矩形725_2.png");
-  background-repeat: repeat;
   position: relative;
   top: -50px;
+  background: transparent;
+  z-index: 10;
 }
 .goodsList {
   width: 1200px;
