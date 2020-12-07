@@ -5,6 +5,6 @@ export default function (context) {
     let isMob = /(Android|webOS|iPhone|iPod|tablet|BlackBerry|Mobile)/i.test(context.userAgent);
     if (isMob && context.route.name != 'toMobile') {
         // console.log(context.route)
-        // context.redirect({ path: '/toMobile', query: { fullPath: context.route.fullPath } })
+        context.redirect({ path: '/toMobile', query: { fullPath: context.route.fullPath } })
     }
 }
