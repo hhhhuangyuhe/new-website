@@ -334,7 +334,7 @@
           <div class="content">
             <h3>员工社保外包管理案例</h3>
             <div class="label">
-              <span>计算机/互联网</span>
+              <span>消费品/综合类</span>
               <span>全国社保外包</span>
             </div>
             <p>

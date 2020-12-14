@@ -231,7 +231,7 @@ export default {
   height: 100%;
   line-height: 90px;
   margin-right: 39px;
-  user-select: none;
+  /* user-select: none; */
   display: flex;
   align-items: center;
 }
@@ -265,7 +265,7 @@ export default {
 .fyw-header-right {
   display: flex;
   align-items: center;
-  user-select: none;
+  /* user-select: none; */
 }
 .fyw-header-right .welfare {
   font-size: 16px;
